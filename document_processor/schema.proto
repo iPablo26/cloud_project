@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package document_processor;
+
+message DocumentMetadata {
+  string filename = 1;
+  string date = 2;
+  repeated string tags = 3;
+  int64 word_count = 4;
+}
